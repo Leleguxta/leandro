@@ -8,9 +8,12 @@ function incrementarContador() {
 }
 function decrementarContador() {
   if (contador.value > 0){
-  contador.value--
+    contador.value--
+  }
 }
-}
+function reset(){
+ contador.value = 0
+} 
 
 onMounted(() => {
   console.log(`O valor inicial do contador é ${contador.value}.`)
@@ -20,6 +23,7 @@ onMounted(() => {
 <template>
   <button @click="incrementarContador">Incrementar</button>
   <button @click="decrementarContador">Decrementar</button>
+  <button @click="reset">Resetar</button>
   <p>Valor do contador é: {{ contador }}</p>
 </template>
 
