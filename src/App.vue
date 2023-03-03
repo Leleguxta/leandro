@@ -21,14 +21,23 @@ onMounted(() => {
 </script>
 
 <template>
-  <button @click="incrementarContador">Incrementar</button>
-  <button @click="decrementarContador">Decrementar</button>
-  <button @click="reset">Resetar</button>
+  <button @click="incrementarContador">+</button>
+  <button @click="decrementarContador">-</button>
+  <button @click="reset">/</button>
   <p>Valor do contador é: {{ contador }}</p>
 </template>
 
 <style scoped>
 button {
   font-weight: bold;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  border: none;
+  border-radius: 15%;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 </style>
