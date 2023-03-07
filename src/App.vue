@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue'
 const contador = ref(0)
 
 function incrementarContador() {
-  if(contador.value < 100){
+  if(contador.value < 1000){
   contador.value++
   }
 }
